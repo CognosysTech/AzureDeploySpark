@@ -1,0 +1,29 @@
+{
+    "dnsNameforLBIP": {
+        "value":"cogtest1231"
+    },
+    "storageAccountName" : {
+        "value":"cogtest1231"
+    },
+    "adminUsername": {
+        "value": "coguser"
+    },
+    "adminPassword": {
+        "value": "deploy@123"
+    },
+    "dataNodes": {
+        "value": 2
+    },
+    "region": {
+        "value": "West US"
+    },
+    "virtualNetworkName": {
+        "value": "spark"
+    },
+    "spkClusterName": {
+        "value": "spark-fullscale"
+    },
+    "vmSizeDataNodes": {
+        "value": "Standard_A1"
+    }
+}
