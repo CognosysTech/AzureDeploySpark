@@ -135,7 +135,7 @@
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',parameters('virtualNetworkName'))]",
     "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',parameters('subnet1Name'))]",
     "sourceImageName": "[concat('/', subscription().subscriptionId,'/services/images/',variables('vmSourceImageName'))]",
-    "scriptUrl": "https://raw.githubusercontent.com/CognosysTech/Azuredeploykafka/master/kafka-azure-install.sh"
+    "scriptUrl": "https://raw.githubusercontent.com/CognosysTech/AzureDeploySpark/master/spark-azure-install.sh"
   },
   "resources": [
     {
@@ -302,7 +302,7 @@
           "fileUris": [
             "[variables('scriptUrl')]"
           ],
-          "commandToExecute": "[concat('bash kafka-azure-install.sh -b ', copyindex())]"
+          "commandToExecute": "[concat('bash spark-azure-install.sh -m 0')]"
         }
       }
     },
@@ -395,7 +395,7 @@
           "fileUris": [
             "[variables('scriptUrl')]"
           ],
-          "commandToExecute": "[concat('bash kafka-azure-install.sh -b ',copyindex() )]"
+          "commandToExecute": "[concat('bash spark-azure-install.sh -m 1' )]"
         }
       }
     },
